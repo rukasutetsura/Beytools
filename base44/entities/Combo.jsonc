@@ -1,0 +1,113 @@
+{
+  "name": "Combo",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nombre del combo"
+    },
+    "sistema": {
+      "type": "string",
+      "enum": [
+        "BX",
+        "BX INFINITY",
+        "UX",
+        "UX INFINITY",
+        "CX",
+        "CX INFINITY"
+      ],
+      "description": "Sistema del combo"
+    },
+    "blade_id": {
+      "type": "string",
+      "description": "ID de la Blade / BladeRatchet"
+    },
+    "ratchet_id": {
+      "type": "string",
+      "description": "ID del Ratchet"
+    },
+    "bit_id": {
+      "type": "string",
+      "description": "ID del Bit"
+    },
+    "bit_activated": {
+      "type": "boolean",
+      "default": false,
+      "description": "Si la bit integrada del combo tiene su gimmick activado"
+    },
+    "lock_chip_id": {
+      "type": "string",
+      "description": "ID del Lock Chip (CX/CX INFINITY)"
+    },
+    "main_blade_id": {
+      "type": "string",
+      "description": "ID de la Main Blade (CX)"
+    },
+    "assist_blade_id": {
+      "type": "string",
+      "description": "ID de la Assist Blade (CX/CX INFINITY)"
+    },
+    "over_blade_id": {
+      "type": "string",
+      "description": "ID de la OverBlade (CX INFINITY)"
+    },
+    "metal_blade_id": {
+      "type": "string",
+      "description": "ID de la Metal Blade (CX INFINITY)"
+    },
+    "total_weight": {
+      "type": "number",
+      "description": "Peso total en gramos"
+    },
+    "dominant_type": {
+      "type": "string",
+      "description": "Tipo predominante"
+    },
+    "spin_direction": {
+      "type": "string",
+      "description": "Direcci\u00f3n de giro"
+    },
+    "attack_stat": {
+      "type": "number",
+      "default": 0
+    },
+    "defense_stat": {
+      "type": "number",
+      "default": 0
+    },
+    "stamina_stat": {
+      "type": "number",
+      "default": 0
+    },
+    "height_stat": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de altura (suma)"
+    },
+    "dash_stat": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de dash (suma)"
+    },
+    "burst_stat": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de burst (suma)"
+    },
+    "best_spin_time": {
+      "type": "number",
+      "default": null,
+      "description": "Mejor tiempo de giro registrado (segundos), sincronizado desde el laboratorio"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "sistema"
+  ]
+}

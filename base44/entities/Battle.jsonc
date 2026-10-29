@@ -1,0 +1,75 @@
+{
+  "name": "Battle",
+  "type": "object",
+  "properties": {
+    "player_a_name": {
+      "type": "string",
+      "description": "Nombre del Jugador A"
+    },
+    "player_a_combo_id": {
+      "type": "string"
+    },
+    "player_a_combo_name": {
+      "type": "string"
+    },
+    "player_a_launcher_id": {
+      "type": "string"
+    },
+    "player_a_launcher_name": {
+      "type": "string"
+    },
+    "player_b_name": {
+      "type": "string",
+      "description": "Nombre del Jugador B"
+    },
+    "player_b_combo_id": {
+      "type": "string"
+    },
+    "player_b_combo_name": {
+      "type": "string"
+    },
+    "player_b_launcher_id": {
+      "type": "string"
+    },
+    "player_b_launcher_name": {
+      "type": "string"
+    },
+    "winner": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B",
+        "EMPATE"
+      ],
+      "description": "Ganador de la batalla (EMPATE = empate)"
+    },
+    "finish_type": {
+      "type": "string",
+      "enum": [
+        "Xtreme Finish",
+        "Burst Finish",
+        "Over Finish",
+        "Pocket Finish",
+        "Spin Finish"
+      ],
+      "description": "Tipo de finalizaci\u00f3n"
+    },
+    "points": {
+      "type": "number",
+      "description": "Puntos otorgados"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "tournament_id": {
+      "type": "string",
+      "description": "ID del torneo (si aplica)"
+    }
+  },
+  "required": [
+    "player_a_name",
+    "player_b_name",
+    "winner",
+    "finish_type"
+  ]
+}

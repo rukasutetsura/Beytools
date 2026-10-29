@@ -1,0 +1,40 @@
+{
+  "name": "Launcher",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nombre del lanzador"
+    },
+    "spin_direction": {
+      "type": "string",
+      "enum": [
+        "Derecha",
+        "Izquierda"
+      ],
+      "description": "Direcci\u00f3n de giro"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "String",
+        "Winder",
+        "Sword",
+        "Custom"
+      ],
+      "description": "Tipo de lanzador"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL de la imagen"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Notas adicionales"
+    }
+  },
+  "required": [
+    "name",
+    "type"
+  ]
+}

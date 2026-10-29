@@ -1,0 +1,154 @@
+{
+  "name": "Part",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nombre de la pieza"
+    },
+    "sistema": {
+      "type": "string",
+      "enum": [
+        "BX",
+        "BX INFINITY",
+        "UX",
+        "UX INFINITY",
+        "CX",
+        "CX INFINITY"
+      ],
+      "description": "Sistema de la pieza"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Blade",
+        "Ratchet",
+        "Bit",
+        "BladeRatchet",
+        "Lock Chip",
+        "Main Blade",
+        "Assist Blade",
+        "OverBlade",
+        "Metal Blade"
+      ],
+      "description": "Categor\u00eda de la pieza"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Ataque",
+        "Defensa",
+        "Resistencia",
+        "Equilibrio"
+      ],
+      "description": "Tipo de la pieza"
+    },
+    "spin_direction": {
+      "type": "string",
+      "enum": [
+        "Derecha",
+        "Izquierda"
+      ],
+      "description": "Direcci\u00f3n de giro"
+    },
+    "weight": {
+      "type": "number",
+      "description": "Peso en gramos"
+    },
+    "stock_combo": {
+      "type": "string",
+      "description": "Combo stock original"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL de la imagen (legacy, una sola imagen)"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "description": "Lista de URLs de im\u00e1genes de la pieza (IMG pieces)"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Notas adicionales"
+    },
+    "is_official": {
+      "type": "boolean",
+      "default": false,
+      "description": "Si es pieza oficial del cat\u00e1logo"
+    },
+    "is_integrated_bit": {
+      "type": "boolean",
+      "default": false,
+      "description": "Si es una bit integrada (operate/turbo) que anula el ratchet"
+    },
+    "attack_stat": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de ataque (0-10)"
+    },
+    "defense_stat": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de defensa (0-10)"
+    },
+    "stamina_stat": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de resistencia (0-10)"
+    },
+    "height_stat": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de altura"
+    },
+    "dash_stat": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de dash"
+    },
+    "burst_stat": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de burst"
+    },
+    "attack_stat_active": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de ataque con gimmick activado (bit integrada)"
+    },
+    "defense_stat_active": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de defensa con gimmick activado (bit integrada)"
+    },
+    "stamina_stat_active": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de resistencia con gimmick activado (bit integrada)"
+    },
+    "height_stat_active": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de altura con gimmick activado (bit integrada)"
+    },
+    "dash_stat_active": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de dash con gimmick activado (bit integrada)"
+    },
+    "burst_stat_active": {
+      "type": "number",
+      "default": 0,
+      "description": "Estad\u00edstica de burst con gimmick activado (bit integrada)"
+    }
+  },
+  "required": [
+    "name",
+    "sistema",
+    "category"
+  ]
+}

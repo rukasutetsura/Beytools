@@ -1,0 +1,34 @@
+{
+  "name": "LabTest",
+  "type": "object",
+  "properties": {
+    "combo_id": {
+      "type": "string",
+      "description": "ID del combo probado"
+    },
+    "combo_name": {
+      "type": "string",
+      "description": "Nombre del combo"
+    },
+    "launcher_id": {
+      "type": "string",
+      "description": "ID del lanzador usado"
+    },
+    "launcher_name": {
+      "type": "string",
+      "description": "Nombre del lanzador"
+    },
+    "spin_time": {
+      "type": "number",
+      "description": "Tiempo de giro en segundos"
+    },
+    "observations": {
+      "type": "string",
+      "description": "Observaciones de la prueba"
+    }
+  },
+  "required": [
+    "combo_id",
+    "spin_time"
+  ]
+}
